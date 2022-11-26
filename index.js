@@ -87,22 +87,19 @@ Use the finalScore function below to do the following:
 */ 
 
 function finalScore(IN,INS){
-  let H = {Home:0}
+  let H = {Home:0,Away:0}
   H.Home = 0
-  let A = {Away:0}
-  A.Away = 0
   
     for(let i = 0; i < INS+1; i++){
     H.Home = H.Home + IN
   }
     for(let i = 0; i < INS+1; i++){
-    A.Away = A.Away + IN
+    H.Away = H.Away + IN
   }
   console.log(H)
-  console.log(A)
+
   }
   finalScore(inning(),5)
-
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
   1. Receive a callback function in a parameter - you will pass in the inning function from task 2 as your argument 
