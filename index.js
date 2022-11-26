@@ -68,13 +68,6 @@ NOTE: This will be a callback function for the tasks below
 
 function inning(){
   let x = Math.floor(Math.random() * 3);
-  if(x = 0){
-    x = 0
-} else if(x = 1) {
- x = 1
-} else {
- x = 2
-}
   return x
   }
   inning()
@@ -93,19 +86,16 @@ Use the finalScore function below to do the following:
 */ 
 
 function finalScore(IN,INS){
-  let X = 0
-  let y = 0
-  let H = {Away:0,Home:0}
-    for(let i = 0; i < INS+1; i++){
-    X = X + IN
+  let H = 0;
+  let A = 0; 
+  for (let i = 0; i < INS; i++){
+H = H + IN;
+A = A + IN;
   }
-    for(let i = 0; i < INS+1; i++){
-    y = y + IN
+  return {
+Home: H, 
+Away: A
   }
- H = {Away:X,Home:y}
-  console.log(X,y);
-  console.log(H);
-  return H
   }
 finalScore(inning(),6)
 
