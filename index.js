@@ -87,7 +87,7 @@ Use the finalScore function below to do the following:
 */ 
 
 function finalScore(IN,INS){
-  let H = {Home:0,Away:0}
+  let H = {Away:0,Home:0}
   H.Home = 0
   
     for(let i = 0; i < INS+1; i++){
@@ -97,7 +97,7 @@ function finalScore(IN,INS){
     H.Away = H.Away + IN
   }
   console.log(H)
-
+  return H
   }
   finalScore(inning(),5)
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
