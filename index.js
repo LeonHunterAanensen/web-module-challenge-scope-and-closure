@@ -67,20 +67,11 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(){
-  let X = 0
-  console.log(X = Math.random());
-    if(X<0.33){
-      console.log(0)
-      X = 0 
-    } else if(X<0.66) {
-      console.log(1)
-      X = 1 
-     } else if(X>0.66) {
-      console.log(2)
-      X = 2
-    }
-  return X
-  }
+  function IN(M) {
+  return Math.floor(Math.random() * M);
+}
+console.log(IN(3));
+}
 inning()
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
@@ -97,10 +88,10 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*Code Here*/){
-  /*Code Here*/
-}
+function finalScore(){
 
+}
+finalScore()
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
