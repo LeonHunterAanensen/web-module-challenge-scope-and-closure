@@ -67,7 +67,7 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(){
-  return Math.floor(Math.random() * 3);
+  Math.floor(Math.random() * 3);
   }
   inning()
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
@@ -91,10 +91,15 @@ function finalScore(IN,INS){
 H = H + IN;
 A = A + IN;
   }
-  return {
+   console.log( {
+Home: H, 
+Away: A
+  } )
+  let X = {
 Home: H, 
 Away: A
   }
+  return X 
   }
 finalScore(inning(),6)
 
