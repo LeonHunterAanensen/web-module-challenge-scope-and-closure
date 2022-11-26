@@ -44,7 +44,9 @@ function counterMaker() {
    return count++;
   }
 }
-
+//1, counter one modifies its count while 2 leaves its count the same
+//2, counter one uses closure as its a function nested in a function ending with a return
+//3, counter one would work best in the short term if you need the base value modified and displayed, counter 2 would be best if you just need to modify the value in the short term and keep the base value unchanged
 const counter1 = counterMaker();
 
 // counter2 code
@@ -64,9 +66,16 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
-}
+function inning(){
+    let X = Math.random 
+    if(X>0.33){
+    return 0 
+    } else if(X>0.66) {
+    return 1 
+    } else {
+    return 2 
+    }
+  }
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
