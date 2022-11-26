@@ -117,13 +117,14 @@ For example: invoking getInningScore(inning) might return this object:
 
 
 function getInningScore(In) {
- let In = X
-  let J = {"Home":X,
-       "Away":X}
-  console.log(J);
-  return J
-}
-getInningScore(inning())
+  let X = 0 
+    In = X
+    let J = {"Home":Math.floor(Math.random() * 3),
+         "Away":Math.floor(Math.random() * 3)}
+    console.log(J);
+    return J
+  }
+  getInningScore(inning())
 
 /* STRETCH: ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:
