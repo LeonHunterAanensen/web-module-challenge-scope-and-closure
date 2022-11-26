@@ -67,7 +67,15 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(){
-  return Math.floor(Math.random() * 3);
+  let x = Math.floor(Math.random() * 3);
+  if(x = 0){
+    x = 0
+} else if(x = 1) {
+ x = 1
+} else {
+ x = 2
+}
+  return x
   }
   inning()
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
