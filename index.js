@@ -86,10 +86,22 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(){
-
-}
-finalScore()
+function finalScore(IN,INS){
+  let H = {Home:0}
+  H.Home = 0
+  let A = {Away:0}
+  A.Away = 0
+  
+    for(let i = 0; i < INS+1; i++){
+    H.Home = H.Home + IN
+  }
+    for(let i = 0; i < INS+1; i++){
+    A.Away = A.Away + IN
+  }
+  console.log(H)
+  console.log(A)
+  }
+  finalScore(inning(),5)
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
