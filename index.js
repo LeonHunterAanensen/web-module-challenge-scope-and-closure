@@ -67,9 +67,7 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(){
-  let x = Math.floor(Math.random() * 3);
-  console.log (x)
-  return x
+  return Math.floor(Math.random() * 3);
   }
   inning()
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
