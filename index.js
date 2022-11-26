@@ -117,8 +117,10 @@ For example: invoking getInningScore(inning) might return this object:
 
 
 function getInningScore(In) {
-  J = {"Home":In,
+ let J = {"Home":In,
        "Away":In}
+  console.log(J);
+  return J
 }
 getInningScore(inning())
 
