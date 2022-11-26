@@ -67,16 +67,20 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(){
-    let X = Math.random 
-    if(X>0.33){
-    return 0 
-    } else if(X>0.66) {
-    return 1 
-    } else {
-    return 2 
+  let X = 0
+  console.log(X = Math.random());
+    if(X<0.33){
+      console.log(0)
+      return 0 
+    } else if(X<0.66) {
+      console.log(1)
+      return 1 
+     } else if(X>0.66) {
+      console.log(2)
+      return 2
     }
   }
-
+inning()
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
