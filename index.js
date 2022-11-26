@@ -67,13 +67,11 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(){
-  function IN(M) {
-  return Math.floor(Math.random() * M);
-}
-console.log(IN(3));
-}
-inning()
-
+  let x = Math.floor(Math.random() * 3);
+  console.log (x)
+  return x
+  }
+  inning()
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
   1. Receive the callback function `inning` that was created in Task 2 in the first parameter
